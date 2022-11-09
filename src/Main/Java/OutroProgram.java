@@ -3,16 +3,12 @@ import javax.sound.sampled.*;
 import java.io.*;
 
 public class OutroProgram {
-    String song = "song.mp3";
-    Media track;
-
-    public static void main(String[] args){
-        Runtime runtime = Runtime.getRuntime();
-        try
-        {
+    public static void main(String[] args)  {
+        try {
+            Runtime runtime = Runtime.getRuntime();
             //Play background music
             MyMediaPlayer audioPlayer = new MyMediaPlayer();
-            audioPlayer.play("resources/TheFatRat Xenogenesis.mp3");
+            audioPlayer.play("resources/TheFatRat Xenogenesis.wav");
 
             // Write ominous message
             System.out.println("Seems like you have doomed your PC");
@@ -22,9 +18,7 @@ public class OutroProgram {
 
             // Shut Down PC
             runtime.exec("shutdown -s -t 0");
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e){
             System.out.println(e.getMessage());
         }
     }
