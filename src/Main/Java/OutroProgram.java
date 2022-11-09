@@ -14,7 +14,7 @@ public class OutroProgram {
             System.out.println("Seems like you have doomed your PC");
 
             // Wait until the drop of the song
-            Thread.sleep(57000);
+            Thread.sleep(58400);
 
             // Shut Down PC
             runtime.exec("shutdown -s -t 0");
